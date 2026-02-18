@@ -26,9 +26,18 @@
   object-fit: cover;
 }
 
-/* Estilos específicos para iframes de Vimeo */
+/* Estilos específicos para iframes de Vimeo - simula object-fit: cover */
 .hero-video[src*="vimeo.com"] {
   object-fit: initial;
+  /* Hacer el iframe más grande para cubrir todo el contenedor */
+  min-width: 100%;
+  min-height: 100%;
+  width: 177.78vh; /* 16:9 aspect ratio */
+  height: 56.25vw; /* 16:9 aspect ratio */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .hero-gradient {
