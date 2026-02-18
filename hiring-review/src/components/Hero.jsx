@@ -12,7 +12,6 @@ const Hero = ({ title, description, duration, participants, videoSrc }) => {
               className="hero-video"
               src={`${videoSrc}&autoplay=1&loop=1&muted=1&background=1`}
               allow="autoplay; fullscreen; picture-in-picture"
-              style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none' }}
             />
           ) : (
             <video

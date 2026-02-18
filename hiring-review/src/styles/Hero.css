@@ -29,6 +29,7 @@
 /* Estilos específicos para iframes de Vimeo - simula object-fit: cover */
 .hero-video[src*="vimeo.com"] {
   object-fit: initial;
+  border: none;
   /* Hacer el iframe más grande para cubrir todo el contenedor */
   min-width: 100%;
   min-height: 100%;
