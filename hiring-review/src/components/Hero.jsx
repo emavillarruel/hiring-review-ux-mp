@@ -10,7 +10,7 @@ const Hero = ({ title, description, duration, participants, videoSrc }) => {
           videoSrc.includes('vimeo.com') ? (
             <iframe
               className="hero-video"
-              src={`${videoSrc}&autoplay=1&loop=1&muted=1&background=1&controls=0`}
+              src={`${videoSrc}&autoplay=1&loop=1&muted=1&background=1`}
               allow="autoplay; fullscreen; picture-in-picture"
               style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none' }}
             />
