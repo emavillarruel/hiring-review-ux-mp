@@ -7,15 +7,24 @@ const Hero = ({ title, description, duration, participants, videoSrc }) => {
       {/* Video de fondo o gradiente */}
       <div className="hero-background">
         {videoSrc ? (
-          <video
-            className="hero-video"
-            autoPlay
-            loop
-            muted
-            playsInline
-          >
-            <source src={videoSrc} type="video/mp4" />
-          </video>
+          videoSrc.includes('vimeo.com') ? (
+            <iframe
+              className="hero-video"
+              src={`${videoSrc}&autoplay=1&loop=1&muted=1&background=1&controls=0`}
+              allow="autoplay; fullscreen; picture-in-picture"
+              style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none' }}
+            />
+          ) : (
+            <video
+              className="hero-video"
+              autoPlay
+              loop
+              muted
+              playsInline
+            >
+              <source src={videoSrc} type="video/mp4" />
+            </video>
+          )
         ) : (
           <div className="hero-gradient" />
         )}

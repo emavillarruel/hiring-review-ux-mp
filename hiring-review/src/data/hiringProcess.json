@@ -61,7 +61,7 @@
       "type": "intro",
       "duration": "15 min",
       "description": "El objetivo es que tengas claridad de lo que hacemos y buscamos",
-      "videoSrc": "/src/assets/SEPA01.mp4",
+      "videoSrc": "https://player.vimeo.com/video/1166000812",
       "whatIsThis": "Cómo pensamos y hacemos diseño en MeLi",
       "whatToExpect": [
         "Video de bienvenida del equipo de UX",
@@ -85,7 +85,7 @@
       "type": "fixed",
       "duration": "45-60 min",
       "description": "Esta es tu primera conversación formal con nosotros. Queremos conocerte mejor, entender tu motivación y alinearnos en expectativas.",
-      "videoSrc": "src/assets/vecteezy_abstract-colorful-pastel-gradient-background_2018246.mp4",
+      "videoSrc": "https://player.vimeo.com/video/1166000864",
       "whatIsThis": "Tu primera entrevist a con nuestro equipo de Talent",
       "whatToExpect": [
         "Conversaremos sobre tu experiencia y trayectoria profesional",
@@ -110,7 +110,7 @@
       "type": "fixed",
       "duration": "60 min",
       "description": "Esta es la entrevista técnica donde evaluamos tu criterio, proceso y calidad de trabajo. Queremos entender cómo piensas y resuelves problemas de diseño.",
-      "videoSrc": "src/assets/vecteezy_abstract-colorful-pastel-gradient-background_2018246.mp4",
+      "videoSrc": "https://player.vimeo.com/video/1166000864",
       "whatIsThis": "Presentarás tu portfolio",
       "whatToExpect": [
         "Presentarás 1 proyecto relevante de tu portfolio (30 min)",
@@ -143,7 +143,7 @@
       "duration": "3-5 días",
       "isOptional": true,
       "whatIsThis": "Ejercicio práctico",
-      "videoSrc": "src/assets/vecteezy_abstract-colorful-pastel-gradient-background_2018246.mp4",
+      "videoSrc": "https://player.vimeo.com/video/1166000864",
       "description": "Queremos validar tu criterio e involucramiento real con un proyecto similar a lo que harías en el día a día. No es un test de diseño, sino una oportunidad para mostrar tu proceso y forma de pensar.",
       "exercises": [
         {
@@ -208,7 +208,7 @@
       "type": "fixed",
       "duration": "45-60 min",
       "whatIsThis": "Esta es la última entrevista del proceso",
-      "videoSrc": "src/assets/vecteezy_abstract-colorful-pastel-gradient-background_2018246.mp4",
+      "videoSrc": "https://player.vimeo.com/video/1166000864",
       "description": "Tu futuro manager quiere conocerte en profundidad, validar seniority y asegurarse de que hay fit con el equipo y el momento actual.",
       "whatToExpect": [
         "Profundizaremos en tu caso de estudio y decisiones complejas",
@@ -233,7 +233,7 @@
       "type": "fixed",
       "duration": "3-5 días hábiles",
       "whatIsThis": "Llegaste al final del proceso",
-      "videoSrc": "src/assets/vecteezy_abstract-colorful-pastel-gradient-background_2018246.mp4",
+      "videoSrc": "https://player.vimeo.com/video/1166000864",
       "description": "Aquí te comunicaremos la decisión y los próximos pasos.",
       "possibleOutcomes": [
         {
