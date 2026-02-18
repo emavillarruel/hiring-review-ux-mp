@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import Hero from './Hero';
 import Momento from './Momento';
 import JobDescriptionModal from './JobDescriptionModal';
+import NextSteps from './NextSteps';
 import ScrollTransition from './ScrollTransition';
 import { seniorUXDesignerJD } from '../data/jobDescriptions';
 import '../styles/ProcessOverview.css';
@@ -73,15 +74,13 @@ const ProcessOverview = ({ userData, onLogout, onContinue, onStepSelect }) => {
         sections={seniorUXDesignerJD.sections}
       />
 
-      {/* Botón para continuar */}
-      {onContinue && (
-        <ScrollTransition animation="fade-up" duration={0.6}>
-          <div style={{ textAlign: 'center', marginTop: '40px', marginBottom: '80px' }}>
-            <button onClick={onContinue} className="continue-button">
-              Comenzar con las entrevistas →
-            </button>
-          </div>
-        </ScrollTransition>
+      {/* Next Steps */}
+      {onContinue && processStep && (
+        <NextSteps
+          nextStepsText={processStep.nextSteps}
+          buttonText="Comenzar con las entrevistas →"
+          onContinue={onContinue}
+        />
       )}
     </div>
   );
