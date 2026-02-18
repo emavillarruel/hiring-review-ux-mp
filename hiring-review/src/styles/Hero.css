@@ -26,6 +26,11 @@
   object-fit: cover;
 }
 
+/* Estilos específicos para iframes de Vimeo */
+.hero-video[src*="vimeo.com"] {
+  object-fit: initial;
+}
+
 .hero-gradient {
   width: 100%;
   height: 100%;
