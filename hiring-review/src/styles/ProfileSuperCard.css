@@ -1,0 +1,395 @@
+/* Profile Super Card - Scroll Animation */
+
+.profile-supercard-section {
+  width: 100%;
+  height: 200vh; /* Espacio para hacer scroll */
+  position: relative;
+  background: var(--color-white);
+}
+
+.profile-supercard-sticky-wrapper {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-xl);
+  overflow: hidden;
+}
+
+.profile-supercard {
+  width: 100%;
+  max-width: 1344px;
+  height: 712px;
+  position: relative;
+  display: flex;
+  gap: 8px;
+}
+
+/* ============================================
+   CARD OSCURA - Se reduce desde derecha a izquierda
+   ============================================ */
+
+.supercard-initial {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.supercard-dark-bg {
+  width: 100%;
+  height: 100%;
+  background: #282834;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px;
+  overflow: hidden;
+  transition: all 800ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.profile-supercard.transformed .supercard-dark-bg {
+  width: calc(50% - 4px);
+  justify-content: flex-start;
+}
+
+.supercard-title-centered {
+  font-family: 'Proxima Nova', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1;
+  letter-spacing: -2.88px;
+  color: #737373;
+  text-align: left;
+  margin: 0;
+  max-width: 806px;
+  font-feature-settings: 'salt' 1, 'calt' 0;
+  transition: all 800ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.profile-supercard.transformed .supercard-title-centered {
+  color: white;
+  max-width: 500px;
+}
+
+/* ============================================
+   ESTADO TRANSFORMADO - Card blanca aparece desde derecha
+   ============================================ */
+
+.supercard-transformed {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  opacity: 0;
+  transform: translateX(20px);
+  transition: all 800ms cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.profile-supercard.transformed .supercard-transformed {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+/* Card blanca derecha */
+.supercard-right {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  background: #f9ebff;
+}
+
+.supercard-content-card {
+  position: absolute;
+  inset: 0;
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  padding-right: 88px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+/* Badge con gradiente */
+.supercard-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 2px 12px 2px 2px;
+  background: rgba(40, 40, 52, 0.1);
+  backdrop-filter: blur(40px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 9999px;
+  width: fit-content;
+  flex-shrink: 0;
+}
+
+.badge-gradient-circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #FFE600 11.842%, rgba(240, 87, 5, 0.92) 88.158%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  flex-shrink: 0;
+}
+
+.badge-icon {
+  font-size: 32px;
+  color: white;
+  font-weight: bold;
+}
+
+.badge-text {
+  font-family: 'Proxima Nova', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: -0.32px;
+  color: #282834;
+  text-transform: uppercase;
+  font-feature-settings: 'salt' 1;
+  white-space: nowrap;
+}
+
+/* Descripción del rol */
+.supercard-role-description {
+  font-family: 'Proxima Nova', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.1;
+  letter-spacing: -1.92px;
+  color: #282834;
+  margin: 0;
+  flex: 1;
+  font-feature-settings: 'salt' 1, 'calt' 0;
+}
+
+/* Botones */
+.supercard-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.supercard-cta-button {
+  padding: 14px 20px;
+  border: none;
+  border-radius: 12px;
+  font-family: 'Proxima Nova', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 200ms;
+  white-space: nowrap;
+  flex-shrink: 0;
+  width: 100%;
+  text-align: left;
+}
+
+/* Botón Secundario - Solo texto con hover */
+.supercard-cta-button.secondary {
+  background: transparent;
+  color: #009EE3;
+}
+
+.supercard-cta-button.secondary:hover {
+  background: rgba(0, 158, 227, 0.08);
+  transform: translateX(4px);
+}
+
+/* Botón Primario - Con gradiente */
+.supercard-cta-button.primary {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-warning) 100%);
+  color: var(--color-gray-900);
+  box-shadow: 0 4px 12px rgba(255, 242, 0, 0.3);
+}
+
+.supercard-cta-button.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 242, 0, 0.4);
+}
+
+.supercard-cta-button.primary:active {
+  transform: translateY(0);
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 1200px) {
+  .supercard-title-centered {
+    font-size: 56px;
+    letter-spacing: -2.24px;
+  }
+
+  .supercard-role-description {
+    font-size: 40px;
+    letter-spacing: -1.6px;
+  }
+
+  .badge-gradient-circle {
+    width: 56px;
+    height: 56px;
+  }
+
+  .badge-icon {
+    font-size: 28px;
+  }
+
+  .badge-text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .profile-supercard {
+    height: 600px;
+  }
+
+  .supercard-content-card {
+    padding: 32px;
+    padding-right: 64px;
+  }
+
+  .supercard-title-centered {
+    font-size: 48px;
+    letter-spacing: -1.92px;
+  }
+
+  .supercard-role-description {
+    font-size: 36px;
+    letter-spacing: -1.44px;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-supercard-sticky-wrapper {
+    padding: var(--spacing-md);
+  }
+
+  .profile-supercard {
+    height: auto;
+    min-height: 550px;
+    flex-direction: column;
+  }
+
+  .supercard-dark-bg {
+    padding: 32px;
+  }
+
+  .profile-supercard.transformed .supercard-dark-bg {
+    width: 100%;
+    height: 250px;
+  }
+
+  .supercard-transformed {
+    width: 100%;
+    height: 350px;
+    top: auto;
+    bottom: 0;
+  }
+
+  .supercard-content-card {
+    padding: 24px;
+    padding-right: 24px;
+  }
+
+  .supercard-title-centered {
+    font-size: 36px;
+    letter-spacing: -1.44px;
+  }
+
+  .supercard-role-description {
+    font-size: 28px;
+    letter-spacing: -1.12px;
+  }
+
+  .badge-gradient-circle {
+    width: 48px;
+    height: 48px;
+  }
+
+  .badge-icon {
+    font-size: 24px;
+  }
+
+  .badge-text {
+    font-size: 12px;
+  }
+
+  .supercard-buttons {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-supercard {
+    min-height: 400px;
+  }
+
+  .supercard-dark-bg {
+    padding: 24px;
+  }
+
+  .profile-supercard.transformed .supercard-dark-bg {
+    height: 200px;
+  }
+
+  .supercard-transformed {
+    height: 320px;
+  }
+
+  .supercard-title-centered {
+    font-size: 28px;
+    letter-spacing: -1.12px;
+  }
+
+  .supercard-role-description {
+    font-size: 24px;
+    letter-spacing: -0.96px;
+  }
+
+  .supercard-badge {
+    padding: 2px 10px 2px 2px;
+  }
+
+  .badge-gradient-circle {
+    width: 40px;
+    height: 40px;
+  }
+
+  .badge-icon {
+    font-size: 20px;
+  }
+
+  .badge-text {
+    font-size: 11px;
+  }
+
+  .supercard-buttons {
+    gap: 10px;
+  }
+
+  .supercard-cta-button {
+    font-size: 13px;
+    padding: 10px 16px;
+  }
+}

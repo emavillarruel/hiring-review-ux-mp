@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar Test</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding-top: 120px;
+    }
+
+    .test-content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+    }
+
+    .test-content h1 {
+      font-size: 32px;
+      margin-bottom: 16px;
+      color: #282834;
+    }
+
+    .test-content p {
+      font-size: 16px;
+      line-height: 24px;
+      color: #666;
+      margin-bottom: 12px;
+    }
+
+    .test-actions {
+      display: flex;
+      gap: 16px;
+      margin-top: 32px;
+    }
+
+    .test-button {
+      padding: 12px 24px;
+      background: #667eea;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 200ms ease;
+    }
+
+    .test-button:hover {
+      background: #5568d3;
+      transform: translateY(-2px);
+    }
+
+    .test-info {
+      margin-top: 40px;
+      padding: 20px;
+      background: #f4f5f9;
+      border-radius: 12px;
+      border-left: 4px solid #667eea;
+    }
+
+    .test-info h3 {
+      font-size: 16px;
+      margin-bottom: 12px;
+      color: #282834;
+    }
+
+    .test-info ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .test-info li {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 8px;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .test-info li:before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #667eea;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <div class="test-content">
+    <h1>🎨 Test del Navbar</h1>
+    <p>Esta es una página de prueba para visualizar el componente Navbar de forma aislada.</p>
+    <p>El navbar está implementado arriba con dos estados:</p>
+
+    <div class="test-info">
+      <h3>Estado Islas (Collapsed)</h3>
+      <ul>
+        <li>Logo grande de Mercado Pago con fondo amarillo</li>
+        <li>Botón de navegación con glassmorphism</li>
+        <li>Botón de usuario</li>
+        <li>Efectos de hover suaves</li>
+      </ul>
+    </div>
+
+    <div class="test-info">
+      <h3>Estado Expandida (Panel Completo)</h3>
+      <ul>
+        <li>Haz clic en "Entrevista 2" para ver el panel expandido</li>
+        <li>Overlay oscuro con blur de fondo</li>
+        <li>Panel blanco que se desliza desde arriba</li>
+        <li>Lista completa de las 5 etapas del proceso</li>
+        <li>Cierra con el botón X o presiona ESC</li>
+      </ul>
+    </div>
+
+    <div class="test-actions">
+      <button class="test-button" onclick="window.location.reload()">🔄 Recargar</button>
+      <button class="test-button" onclick="alert('Navbar funcionando correctamente ✅')">✅ Marcar como OK</button>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>

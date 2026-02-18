@@ -1,0 +1,265 @@
+/* ============================================
+   COMPONENTS SHOWCASE
+   ============================================ */
+
+.showcase-container {
+  min-height: 100vh;
+  background: #f5f6fa;
+  padding: 40px 20px;
+}
+
+.showcase-header {
+  max-width: 1200px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.showcase-header h1 {
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #282834;
+  margin: 0 0 16px;
+}
+
+.showcase-header p {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  color: #666;
+  margin: 0 0 24px;
+}
+
+.showcase-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  border-top: 2px solid #e0e0e0;
+  margin-top: 20px;
+}
+
+.showcase-link {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #667eea;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: rgba(102, 126, 234, 0.1);
+  transition: all 0.2s ease;
+}
+
+.showcase-link:hover {
+  background: rgba(102, 126, 234, 0.2);
+  transform: translateX(-4px);
+}
+
+.showcase-url {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #666;
+}
+
+.showcase-url code {
+  background: #282834;
+  color: #FFE600;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-family: 'Monaco', 'Courier New', monospace;
+  font-size: 13px;
+}
+
+/* ============================================
+   SECTIONS
+   ============================================ */
+
+.showcase-section {
+  max-width: 1200px;
+  margin: 0 auto 80px;
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.showcase-title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.showcase-title h2 {
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #282834;
+  margin: 0;
+}
+
+.showcase-badge {
+  background: #FFE600;
+  color: #282834;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.showcase-description {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #666;
+  margin: 0 0 24px;
+  line-height: 1.6;
+}
+
+/* ============================================
+   CODE BLOCK
+   ============================================ */
+
+.showcase-code {
+  background: #282834;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 32px;
+  overflow-x: auto;
+}
+
+.showcase-code code {
+  font-family: 'Monaco', 'Courier New', monospace;
+  font-size: 14px;
+  color: #FFE600;
+  white-space: pre;
+  line-height: 1.6;
+}
+
+/* ============================================
+   DEMO
+   ============================================ */
+
+.showcase-demo {
+  border: 2px dashed #e0e0e0;
+  border-radius: 12px;
+  padding: 24px;
+  background: #fafbfc;
+}
+
+/* ============================================
+   SUMMARY
+   ============================================ */
+
+.showcase-summary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.showcase-summary h2 {
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 32px;
+}
+
+.page-summary {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.page-summary:last-child {
+  margin-bottom: 0;
+}
+
+.page-summary h3 {
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 16px;
+}
+
+.page-summary ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.page-summary ul li {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: white;
+  padding: 8px 0;
+  padding-left: 28px;
+  position: relative;
+}
+
+.page-summary ul li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  font-weight: 700;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 768px) {
+  .showcase-container {
+    padding: 24px 16px;
+  }
+
+  .showcase-header {
+    margin-bottom: 40px;
+  }
+
+  .showcase-header h1 {
+    font-size: 32px;
+  }
+
+  .showcase-header p {
+    font-size: 16px;
+  }
+
+  .showcase-section {
+    padding: 24px;
+    margin-bottom: 40px;
+  }
+
+  .showcase-title h2 {
+    font-size: 24px;
+  }
+
+  .showcase-code {
+    padding: 16px;
+  }
+
+  .showcase-code code {
+    font-size: 12px;
+  }
+
+  .showcase-demo {
+    padding: 16px;
+  }
+
+  .page-summary {
+    padding: 20px;
+  }
+
+  .page-summary h3 {
+    font-size: 20px;
+  }
+
+  .page-summary ul li {
+    font-size: 14px;
+  }
+}

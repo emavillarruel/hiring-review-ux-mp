@@ -1,0 +1,80 @@
+Senior UX Designer – Cobranza (Créditos)
+Buscamos una persona Senior UX Designer para el diseño de experiencias en el track de Cobranza dentro del vertical de Créditos.
+
+Este rol es clave para transformar necesidades reales de personas usuarias y equipos internos (cobranza, riesgo, operaciones, data) en soluciones simples, efectivas y de alta calidad, en un contexto de alta complejidad, sensibilidad y regulación.
+
+Valoramos especialmente la capacidad de:
+
+Equilibrar impacto y empatía: diseñar experiencias que mejoren la recuperación y los indicadores de negocio, cuidando al mismo tiempo la relación con las personas usuarias en momentos de tensión (mora, dificultades de pago, acuerdos).
+Combinar visión estratégica y ejecución impecable: moverse cómodamente entre la definición de la estrategia de experiencia del ciclo de cobranza y el detalle fino de cada flujo, pantalla y mensaje.
+Principales responsabilidades
+Liderar el diseño de experiencias end-to-end de cobranza, cubriendo todo el journey:
+
+prevención de mora, alertas tempranas,
+recordatorios de pago,
+gestión de atrasos,
+acuerdos, refinanciaciones y promesas de pago,
+comunicación y canalización hacia otros equipos según severidad del caso.
+Colaborar estrechamente con Producto, Cobranza, Riesgo, Data, Legal y Tecnología, facilitando conversaciones y decisiones en torno a:
+
+estrategias de segmentación y contactabilidad,
+reglas de negocio y prioridades de cobranza,
+impacto en métricas clave (recuperación, días de mora, NPL, NPS, churn, etc.).
+Modelar sistemas y flujos complejos de cobranza, documentando:
+
+journeys multi-canal (app, web, notificaciones, email, WhatsApp, llamadas, etc.),
+escenarios y edge cases (diferentes niveles de mora, reintentos, incumplimientos de promesas, disputas, reestructuraciones),
+dependencias entre equipos y sistemas.
+Diseñar y prototipar soluciones de forma ágil, generando wireframes, flujos y prototipos interactivos que permitan:
+
+alinear rápidamente a stakeholders,
+validar hipótesis con usuarios y equipos internos,
+iterar en base a aprendizaje continuo.
+Elevar el nivel de craft en cobranza, asegurando:
+
+claridad funcional y jerarquía de información adecuada en cada punto de contacto,
+diseño visual e interacción consistentes con el Design System,
+estados, vacíos y errores bien resueltos, especialmente en momentos críticos (rechazos, bloqueos, escalamientos).
+Construir y cuidar el contenido de la experiencia (UX Writing) en contextos sensibles:
+
+mensajes claros, empáticos y accionables en recordatorios, avisos de mora, acuerdos y consecuencias,
+tono consistente con la marca y alineado con requerimientos de riesgo/compliance,
+pruebas y mejora continua de copys con foco en efectividad e impacto en métricas.
+Utilizar y contribuir activamente al Design System y a los patrones de Cobranza, generando:
+
+componentes reutilizables específicos para este dominio (por ejemplo: módulos de deuda, estados de pago, timelines de eventos),
+documentación clara para escalar buenas prácticas en todo el vertical de créditos.
+Aprovechar nuevas tecnologías, especialmente IA, para:
+
+acelerar exploración de variantes de diseño y contenido,
+analizar feedback y datos de comportamiento en flujos de cobranza,
+explorar casos de uso donde IA pueda potenciar la experiencia (segmentación, timing, personalización de mensajes), siempre con criterio y alineado a riesgo y regulación.
+Acompañar y mentorizar a otros diseñadores/as del equipo, compartiendo buenas prácticas, revisando trabajo (crits) y ayudando a elevar el estándar de calidad en el vertical de créditos.
+
+Lo que esperamos de esta persona
+Experiencia comprobada (senior) en Diseño de Producto (UX/UI) para productos digitales complejos; idealmente en:
+
+servicios financieros, fintech, banca o seguros, y/o
+dominios con reglas de negocio complejas y múltiples stakeholders (por ejemplo: riesgo, crédito, operaciones).
+Experiencia trabajando en flujos críticos de negocio, mejorando indicadores como conversión, retención, recuperación, o similares; experiencia directa en cobranza, pagos o créditos es un plus importante.
+
+Capacidad demostrada para modelar sistemas, journeys y flujos complejos, incluyendo:
+
+múltiples escenarios, excepciones y estados,
+interacción entre canales y equipos,
+documentación clara para Producto, Tech y Operaciones.
+Dominio sólido de diseño visual e interacción, con:
+
+experiencia usando Design Systems a escala,
+sensibilidad por el detalle y la consistencia,
+criterio para priorizar dónde invertir más craft según el impacto.
+Habilidades avanzadas de comunicación y storytelling, capaces de:
+
+explicar decisiones de diseño en términos de impacto en negocio, riesgo y experiencia,
+alinear a stakeholders con distintas prioridades (cobranza, riesgo, producto, tecnología).
+Interés genuino por nuevas tecnologías, especialmente IA, y disposición para incorporarlas de manera pragmática en el proceso de diseño (exploración, research, documentación, handoff).
+
+Comodidad para operar en ambigüedad y bajo restricciones reales (regulatorias, de riesgo, de tiempo, deuda técnica), tomando decisiones informadas, gestionando trade-offs y manteniendo siempre el foco en:
+
+proteger y mejorar la experiencia de las personas usuarias,
+maximizar el impacto en las métricas del negocio de créditos.

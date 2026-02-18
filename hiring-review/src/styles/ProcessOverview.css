@@ -1,0 +1,53 @@
+/* ============================================
+   PROCESS OVERVIEW PAGE
+   ============================================ */
+
+.process-overview-page {
+  min-height: 100vh;
+  background: white;
+  padding: 16px;
+}
+
+/* ============================================
+   CONTINUE BUTTON
+   ============================================ */
+
+.continue-button {
+  padding: 20px 40px;
+  background: linear-gradient(135deg, #FFE600 0%, #FFD700 100%);
+  color: #282834;
+  border: none;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255, 230, 0, 0.3);
+}
+
+.continue-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(255, 230, 0, 0.4);
+}
+
+.continue-button:active {
+  transform: translateY(-2px);
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 768px) {
+  .process-overview-page {
+    padding: 12px;
+  }
+
+  .continue-button {
+    font-size: 16px;
+    padding: 16px 32px;
+    width: 100%;
+    max-width: 400px;
+  }
+}

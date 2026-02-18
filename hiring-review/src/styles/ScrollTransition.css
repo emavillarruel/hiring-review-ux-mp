@@ -1,0 +1,139 @@
+/* ============================================
+   SCROLL TRANSITION - Animaciones al hacer scroll
+   ============================================ */
+
+.scroll-transition {
+  transition-property: opacity, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: opacity, transform;
+}
+
+/* ============================================
+   FADE UP - Desvanece desde abajo
+   ============================================ */
+.scroll-transition.fade-up {
+  opacity: 0;
+  transform: translateY(60px);
+}
+
+.scroll-transition.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ============================================
+   FADE DOWN - Desvanece desde arriba
+   ============================================ */
+.scroll-transition.fade-down {
+  opacity: 0;
+  transform: translateY(-60px);
+}
+
+.scroll-transition.fade-down.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ============================================
+   FADE LEFT - Desvanece desde la derecha
+   ============================================ */
+.scroll-transition.fade-left {
+  opacity: 0;
+  transform: translateX(60px);
+}
+
+.scroll-transition.fade-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ============================================
+   FADE RIGHT - Desvanece desde la izquierda
+   ============================================ */
+.scroll-transition.fade-right {
+  opacity: 0;
+  transform: translateX(-60px);
+}
+
+.scroll-transition.fade-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ============================================
+   FADE - Solo desvanece (sin movimiento)
+   ============================================ */
+.scroll-transition.fade {
+  opacity: 0;
+}
+
+.scroll-transition.fade.visible {
+  opacity: 1;
+}
+
+/* ============================================
+   SCALE - Escala desde pequeño
+   ============================================ */
+.scroll-transition.scale {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.scroll-transition.scale.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ============================================
+   ZOOM - Escala desde grande
+   ============================================ */
+.scroll-transition.zoom {
+  opacity: 0;
+  transform: scale(1.1);
+}
+
+.scroll-transition.zoom.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ============================================
+   SLIDE UP - Desliza desde abajo (más distancia)
+   ============================================ */
+.scroll-transition.slide-up {
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+.scroll-transition.slide-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 768px) {
+  .scroll-transition.fade-up,
+  .scroll-transition.fade-down {
+    transform: translateY(40px);
+  }
+
+  .scroll-transition.fade-left,
+  .scroll-transition.fade-right {
+    transform: translateX(40px);
+  }
+
+  .scroll-transition.slide-up {
+    transform: translateY(60px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-transition {
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

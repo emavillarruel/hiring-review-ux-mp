@@ -1,0 +1,248 @@
+/* ============================================
+   RESULTADOS SECTION
+   ============================================ */
+
+.resultados-container {
+  background: white;
+  border-radius: 20px;
+  padding: 88px 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  align-items: center;
+}
+
+/* ============================================
+   HEADER
+   ============================================ */
+
+.resultados-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resultados-title {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 1;
+  letter-spacing: -2.88px;
+  color: #282834;
+  text-align: center;
+  margin: 0;
+}
+
+/* ============================================
+   CARDS CONTAINER
+   ============================================ */
+
+.resultados-cards {
+  width: 100%;
+  max-width: 928px;
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* ============================================
+   CARD
+   ============================================ */
+
+.resultado-card {
+  position: relative;
+  width: 344px;
+  height: 480px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resultado-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Tarjeta positiva (amarilla) */
+.resultado-card-positive {
+  background: #ffe600;
+}
+
+/* Tarjeta negativa (oscura) */
+.resultado-card-negative {
+  background: #282834;
+}
+
+/* ============================================
+   CARD HEADER
+   ============================================ */
+
+.resultado-card-header {
+  padding: 24px;
+}
+
+.resultado-card-title {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: -1.6px;
+  margin: 0;
+}
+
+.resultado-card-positive .resultado-card-title {
+  color: #282834;
+}
+
+.resultado-card-negative .resultado-card-title {
+  color: white;
+}
+
+/* ============================================
+   CARD CONTENT
+   ============================================ */
+
+.resultado-card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 72px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.resultado-card-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0;
+  margin: 0;
+}
+
+.resultado-card-positive .resultado-card-subtitle {
+  color: #646587;
+}
+
+.resultado-card-negative .resultado-card-subtitle {
+  color: #a3a3bd;
+}
+
+/* ============================================
+   CARD LIST
+   ============================================ */
+
+.resultado-card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.resultado-card-list p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0;
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.resultado-card-list p:last-child {
+  margin-bottom: 0;
+}
+
+.resultado-card-positive .resultado-card-list p {
+  color: #646587;
+}
+
+.resultado-card-negative .resultado-card-list p {
+  color: #a3a3bd;
+}
+
+/* ============================================
+   ICON BUTTON
+   ============================================ */
+
+.resultado-icon-button {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: transparent;
+}
+
+.resultado-icon-button:hover {
+  transform: scale(1.1);
+}
+
+.resultado-icon-button:active {
+  transform: scale(0.95);
+}
+
+.resultado-icon-positive {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.resultado-icon-positive:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.resultado-icon-negative {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.resultado-icon-negative:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 768px) {
+  .resultados-container {
+    padding: 40px 20px;
+    gap: 40px;
+  }
+
+  .resultados-title {
+    font-size: 48px;
+    letter-spacing: -1.92px;
+  }
+
+  .resultados-cards {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .resultado-card {
+    width: 100%;
+    max-width: 344px;
+  }
+
+  .resultado-card-title {
+    font-size: 32px;
+    letter-spacing: -1.28px;
+  }
+
+  .resultado-card-subtitle {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}

@@ -1,0 +1,185 @@
+/* ============================================
+   STEP DETAIL NEW
+   ============================================ */
+
+.step-detail-new {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* ============================================
+   INFO BANNER
+   ============================================ */
+
+.info-banner {
+  padding: 20px 24px;
+  background: linear-gradient(135deg, rgba(0, 158, 227, 0.1) 0%, rgba(0, 119, 190, 0.1) 100%);
+  border: 2px solid #009EE3;
+  border-radius: 20px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.info-banner-icon {
+  font-size: 32px;
+  flex-shrink: 0;
+}
+
+.info-banner-text {
+  margin: 0;
+  color: #282834;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Inter', sans-serif;
+}
+
+.info-banner-text strong {
+  font-weight: 700;
+}
+
+/* ============================================
+   NEXT STEPS CARD
+   ============================================ */
+
+.next-steps-card {
+  padding: 24px;
+  background: linear-gradient(135deg, #009EE3 0%, #0077BE 100%);
+  color: white;
+  border-radius: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.next-steps-text {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: 'Inter', sans-serif;
+}
+
+.next-steps-text strong {
+  display: inline;
+  font-weight: 700;
+}
+
+/* ============================================
+   NEXT STEP BUTTON
+   ============================================ */
+
+.next-step-button {
+  margin-top: 40px;
+  padding: 20px 40px;
+  background: linear-gradient(135deg, #FFE600 0%, #FFD700 100%);
+  color: #282834;
+  border: none;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255, 230, 0, 0.3);
+}
+
+.next-step-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(255, 230, 0, 0.4);
+}
+
+.next-step-button:active {
+  transform: translateY(-2px);
+}
+
+/* ============================================
+   FINAL MESSAGE
+   ============================================ */
+
+.final-message {
+  text-align: center;
+  padding: 60px 40px;
+  background: linear-gradient(135deg, rgba(76, 217, 100, 0.1) 0%, rgba(0, 158, 227, 0.1) 100%);
+  border-radius: 24px;
+  margin-top: 40px;
+  border: 2px solid #4CD964;
+}
+
+.final-message-icon {
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+
+.final-message-title {
+  color: #282834;
+  margin-bottom: 16px;
+  font-size: 40px;
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 700;
+  letter-spacing: -1.6px;
+}
+
+.final-message-text {
+  color: #666;
+  font-size: 20px;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 768px) {
+  .info-banner {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .info-banner-icon {
+    font-size: 24px;
+  }
+
+  .info-banner-text {
+    font-size: 14px;
+  }
+
+  .next-steps-card {
+    padding: 20px;
+  }
+
+  .next-steps-text {
+    font-size: 16px;
+  }
+
+  .next-step-button {
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+
+  .final-message {
+    padding: 40px 24px;
+  }
+
+  .final-message-icon {
+    font-size: 60px;
+  }
+
+  .final-message-title {
+    font-size: 32px;
+    letter-spacing: -1.28px;
+  }
+
+  .final-message-text {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,19 @@
+/* ============================================
+   HIRING MANAGER PAGE
+   ============================================ */
+
+.hiring-manager-page {
+  min-height: 100vh;
+  background: white;
+  padding: 16px;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 768px) {
+  .hiring-manager-page {
+    padding: 12px;
+  }
+}

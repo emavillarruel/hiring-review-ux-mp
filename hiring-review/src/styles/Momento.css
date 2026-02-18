@@ -1,0 +1,370 @@
+/* ============================================
+   MOMENTO - Componente con detalle e imagen
+   ============================================ */
+
+.momento-container {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* ============================================
+   PANEL DE DETALLE (Izquierda)
+   ============================================ */
+
+.momento-detail {
+  position: relative;
+  flex: 1;
+  height: 712px;
+  background: #282834;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+/* Header: Badge + Título */
+.momento-header {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Badge con glassmorphism */
+.momento-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 2px 16px 2px 2px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 9999px;
+  width: fit-content;
+}
+
+/* Icono del badge con gradiente */
+.momento-badge-icon {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 9999px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.momento-badge-gradient {
+  position: absolute;
+  inset: 2px;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.momento-badge-gradient-inner {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(225deg, rgba(184, 0, 159, 0.92) 12.821%, rgba(43, 8, 73, 0.92) 87.179%);
+  border-radius: 9999px;
+  transform: scaleY(-1);
+}
+
+.momento-badge-gradient-blur {
+  position: absolute;
+  inset: 1px;
+  background: linear-gradient(135deg, rgba(184, 0, 159, 0.92) 11.842%, rgba(43, 8, 73, 0.92) 88.158%);
+  border-radius: 9999px;
+  filter: blur(1px);
+}
+
+.momento-badge-asterisk {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.momento-badge-asterisk img {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+/* Label del badge */
+.momento-badge-label {
+  font-family: 'Proxima Nova', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: -0.4px;
+  color: white;
+  text-transform: uppercase;
+  padding-top: 2px;
+  font-feature-settings: 'salt' 1;
+}
+
+/* Título principal */
+.momento-title {
+  font-family: 'Proxima Nova', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1;
+  letter-spacing: -2.24px;
+  color: white;
+  margin: 0;
+  font-feature-settings: 'salt' 1, 'calt' 0;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+/* Footer: Scope + Descripción + Botón */
+.momento-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-right: 48px;
+}
+
+.momento-scope {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #a3a3bd;
+  margin: 0;
+  font-feature-settings: 'case' 1;
+}
+
+.momento-description {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #a3a3bd;
+  margin: 0;
+  font-feature-settings: 'case' 1;
+}
+
+/* Botón principal */
+.momento-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  background: white;
+  color: #282834;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: all 200ms ease;
+  width: fit-content;
+  font-feature-settings: 'case' 1;
+}
+
+.momento-button:hover {
+  background: #f0f0f0;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.momento-button:active {
+  transform: translateY(0);
+}
+
+/* Botón de favorito */
+.momento-favorite {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 48px;
+  height: 48px;
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+.momento-favorite:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.momento-favorite img {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+/* ============================================
+   PANEL DE IMAGEN (Derecha)
+   ============================================ */
+
+.momento-image {
+  flex: 1;
+  height: 712px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.momento-image-content {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.momento-image-placeholder {
+  width: 100%;
+  height: 100%;
+  background: #f9ebff;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 1366px) {
+  .momento-container {
+    gap: 12px;
+  }
+
+  .momento-detail,
+  .momento-image {
+    width: 600px;
+    height: 640px;
+  }
+
+  .momento-title {
+    font-size: 64px;
+    letter-spacing: -2.56px;
+  }
+
+  .momento-scope {
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .momento-container {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .momento-detail,
+  .momento-image {
+    width: 100%;
+    height: 600px;
+  }
+
+  .momento-detail {
+    padding: 32px;
+  }
+
+  .momento-title {
+    font-size: 56px;
+    letter-spacing: -2.24px;
+  }
+
+  .momento-footer {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .momento-detail,
+  .momento-image {
+    height: 500px;
+  }
+
+  .momento-detail {
+    padding: 24px;
+  }
+
+  .momento-badge {
+    padding: 2px 12px 2px 2px;
+  }
+
+  .momento-badge-icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .momento-badge-label {
+    font-size: 16px;
+  }
+
+  .momento-title {
+    font-size: 48px;
+    letter-spacing: -1.92px;
+  }
+
+  .momento-scope {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .momento-description {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .momento-favorite {
+    top: 24px;
+    right: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .momento-detail,
+  .momento-image {
+    height: 450px;
+    border-radius: 12px;
+  }
+
+  .momento-detail {
+    padding: 20px;
+  }
+
+  .momento-header {
+    gap: 16px;
+  }
+
+  .momento-badge-icon {
+    width: 52px;
+    height: 52px;
+  }
+
+  .momento-badge-label {
+    font-size: 14px;
+  }
+
+  .momento-title {
+    font-size: 36px;
+    letter-spacing: -1.44px;
+  }
+
+  .momento-scope {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .momento-footer {
+    gap: 16px;
+  }
+
+  .momento-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}

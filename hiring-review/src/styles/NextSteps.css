@@ -1,0 +1,135 @@
+/* ============================================
+   NEXT STEPS CONTAINER
+   ============================================ */
+
+.next-steps-container {
+  position: relative;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  gap: 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #282834;
+}
+
+/* ============================================
+   NEXT STEPS CARD
+   ============================================ */
+
+.next-steps-card {
+  padding: 24px;
+  color: white;
+  border-radius: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.next-steps-card.success {
+  padding: 32px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.next-steps-text {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.6;
+  font-family: 'Inter', sans-serif;
+}
+
+.next-steps-card.success .next-steps-text {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.next-steps-text strong {
+  display: inline;
+  font-weight: 700;
+}
+
+/* ============================================
+   BUTTON WRAPPER
+   ============================================ */
+
+.button-wrapper {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+/* ============================================
+   CONTINUE BUTTON
+   ============================================ */
+
+.continue-button {
+  padding: 20px 40px;
+  background: white;
+  color: #282834;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.continue-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  background: #ffffff;
+}
+
+.continue-button:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 768px) {
+  .next-steps-container {
+    gap: 16px;
+    border-radius: 12px;
+  }
+
+  .next-steps-card {
+    padding: 20px;
+  }
+
+  .next-steps-card.success {
+    padding: 24px;
+    margin-bottom: 50px;
+  }
+
+  .next-steps-text {
+    font-size: 16px;
+  }
+
+  .next-steps-card.success .next-steps-text {
+    font-size: 18px;
+  }
+
+  .button-wrapper {
+    margin-top: 32px;
+    margin-bottom: 60px;
+  }
+
+  .continue-button {
+    font-size: 16px;
+    padding: 16px 32px;
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .next-steps-container {
+    border-radius: 8px;
+  }
+}

@@ -1,0 +1,590 @@
+/* ============================================
+   NAVBAR - Diseño Figma
+   ============================================ */
+
+/* Estado base - Navbar Islas (collapsed) */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 40px;
+  z-index: 150;
+  transition: all 300ms ease;
+}
+
+/* ============================================
+   LADO IZQUIERDO
+   ============================================ */
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Logo (120x56px) con fondo amarillo */
+.navbar-logo-large {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFE600;
+  width: 120px;
+  height: 56px;
+  border-radius: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+  gap: 8px;
+}
+
+.navbar-logo-icon-large {
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.navbar-logo-text-large {
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Contenedor del dropdown con glassmorphism */
+.navbar-dropdown-container {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  background: rgba(40, 40, 52, 0.1);
+  padding: 8px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+/* Botón para expandir dentro del contenedor */
+.navbar-expand-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 16px;
+  background: rgba(40, 40, 52, 0.15);
+  border: none;
+  border-radius: 12px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #282834;
+  cursor: pointer;
+  transition: all 200ms ease;
+  font-feature-settings: 'case' 1;
+}
+
+.navbar-expand-button:hover {
+  background: rgba(40, 40, 52, 0.15);
+}
+
+.navbar-expand-text {
+  white-space: nowrap;
+  color: white;
+}
+
+.navbar-expand-chevron {
+  width: 16px;
+  height: 16px;
+  opacity: 0.7;
+  transition: transform 200ms ease;
+}
+
+/* ============================================
+   LADO DERECHO
+   ============================================ */
+
+.navbar-right {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  background: rgba(40, 40, 52, 0.1);
+  padding: 8px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.navbar-back {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: white;
+  background: transparent;
+  border: none;
+  border-radius: 12px;
+  padding: 11px 16px;
+  cursor: pointer;
+  transition: all 200ms ease;
+  white-space: nowrap;
+  font-feature-settings: 'case' 1;
+}
+
+.navbar-back:hover {
+  background: rgba(40, 40, 52, 0.15);
+}
+
+.navbar-user {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: white;
+  background: rgba(40, 40, 52, 0.15);
+  border: none;
+  border-radius: 12px;
+  padding: 11px 16px;
+  cursor: pointer;
+  transition: all 200ms ease;
+  white-space: nowrap;
+  font-feature-settings: 'case' 1;
+}
+
+.navbar-user:hover {
+  background: rgba(40, 40, 52, 0.25);
+}
+
+.navbar-close-icon {
+  width: 40px;
+  height: 40px;
+  background: rgba(40, 40, 52, 0.15);
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  transition: all 200ms ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.navbar-close-icon:hover {
+  background: rgba(40, 40, 52, 0.25);
+}
+
+/* ============================================
+   NAVBAR EXPANDIDA (Panel completo)
+   ============================================ */
+
+.navbar-expanded-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  padding: 176px 40px 40px 40px;
+  z-index: 100;
+  animation: panelSlideDown 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+@keyframes panelSlideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Contenido del panel expandido en dos columnas */
+.navbar-expanded-content {
+  display: flex;
+  gap: 120px;
+  margin: 0 auto;
+}
+
+/* Columna izquierda: Título y descripción */
+.navbar-expanded-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 0;
+}
+
+.navbar-expanded-greeting {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 20px;
+  color: #252537;
+  font-feature-settings: 'case' 1;
+}
+
+.navbar-expanded-title {
+  font-family: 'Proxima Nova', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1;
+  color: #282834;
+  margin: 0;
+  letter-spacing: -1.92px;
+  font-feature-settings: 'salt' 1;
+  max-width: 80%;
+}
+
+.navbar-expanded-description {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  color: #252537;
+  margin: 0;
+  font-feature-settings: 'case' 1;
+  max-width: 80%;
+}
+
+/* Columna derecha: Lista de etapas */
+.navbar-expanded-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  min-width: 0;
+}
+
+/* Cada row de etapa */
+.navbar-expanded-step {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px;
+  margin: -16px 16px;
+  background: transparent;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: background 200ms ease;
+}
+
+.navbar-expanded-step:hover {
+  background: rgba(40, 40, 52, 0.05);
+}
+
+.navbar-expanded-step.active {
+  background: rgba(40, 40, 52, 0.1);
+}
+
+.navbar-expanded-step.active:hover {
+  background: rgba(40, 40, 52, 0.15);
+}
+
+.navbar-expanded-step-link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+  transition: opacity 200ms ease;
+}
+
+.navbar-expanded-step:hover .navbar-expanded-step-link {
+  opacity: 0.7;
+}
+
+.navbar-expanded-step.active:hover .navbar-expanded-step-link {
+  opacity: 1;
+}
+
+.navbar-expanded-step-name {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #282834;
+  font-feature-settings: 'case' 1;
+}
+
+.navbar-expanded-step.active .navbar-expanded-step-name {
+
+}
+
+.navbar-expanded-step-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  background: rgba(40, 40, 52, 0.15);
+  border-radius: 16px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+  margin-left: 8px;
+  font-feature-settings: 'case' 1;
+}
+
+.navbar-expanded-step-arrow {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.navbar-expanded-step-description {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #646587;
+  font-feature-settings: 'case' 1;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 16px 32px;
+  }
+
+  .navbar-logo-large {
+    padding: 12px 20px;
+    gap: 14px;
+  }
+
+  .navbar-logo-icon-large {
+    height: 28px;
+  }
+
+  .navbar-logo-text-large {
+    height: 22px;
+  }
+
+  .navbar-expand-button,
+  .navbar-back,
+  .navbar-user {
+    padding: 12px 20px;
+    font-size: 13px;
+  }
+
+  .navbar-expanded-panel {
+    padding: 32px 40px 48px 40px;
+  }
+
+  .navbar-expanded-title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .navbar-expanded-description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 16px 24px;
+  }
+
+  .navbar-left {
+    gap: 16px;
+  }
+
+  .navbar-logo-large {
+    padding: 10px 16px;
+    gap: 12px;
+  }
+
+  .navbar-logo-icon-large {
+    height: 24px;
+  }
+
+  .navbar-logo-text-large {
+    height: 20px;
+  }
+
+  .navbar-expand-button {
+    padding: 10px 16px;
+    font-size: 12px;
+    gap: 8px;
+  }
+  .navbar-expand-button:hover {
+    background: rgba(58, 58, 124, 0.5);
+  }
+  .navbar-expand-chevron {
+    width: 14px;
+    height: 14px;
+  }
+
+  .navbar-user,
+  .navbar-back {
+    padding: 10px 16px;
+    font-size: 12px;
+  }
+
+  .navbar-expanded-panel {
+    padding: 40px;
+    border-radius: 0 0 24px 24px;
+  }
+
+  .navbar-expanded-header {
+    margin-bottom: 32px;
+  }
+
+  .navbar-close-button {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .navbar-expanded-greeting {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .navbar-expanded-title {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+
+  .navbar-expanded-description {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 32px;
+  }
+
+  .navbar-expanded-steps {
+    gap: 12px;
+  }
+
+  .navbar-expanded-step {
+    padding: 20px;
+    gap: 16px;
+  }
+
+  .navbar-expanded-step-icon {
+    font-size: 28px;
+    width: 44px;
+    height: 44px;
+  }
+
+  .navbar-expanded-step-name {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .navbar-expanded-step-description {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 12px 16px;
+  }
+
+  .navbar-left {
+    gap: 12px;
+  }
+
+  .navbar-logo-large {
+    padding: 8px 14px;
+    gap: 10px;
+  }
+
+  .navbar-logo-icon-large {
+    height: 20px;
+  }
+
+  .navbar-logo-text-large {
+    height: 18px;
+  }
+
+  .navbar-expand-button {
+    padding: 8px 14px;
+    font-size: 11px;
+    gap: 6px;
+  }
+
+  .navbar-expand-chevron {
+    width: 12px;
+    height: 12px;
+  }
+
+  .navbar-user {
+    padding: 8px 14px;
+    font-size: 11px;
+  }
+
+  .navbar-back {
+    display: none;
+  }
+
+  .navbar-expanded-panel {
+    padding: 20px 20px 32px 20px;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .navbar-expanded-header {
+    margin-bottom: 24px;
+  }
+
+  .navbar-close-button {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+
+  .navbar-expanded-greeting {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+
+  .navbar-expanded-title {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 16px;
+  }
+
+  .navbar-expanded-description {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 28px;
+  }
+
+  .navbar-expanded-steps {
+    gap: 10px;
+  }
+
+  .navbar-expanded-step {
+    padding: 16px;
+    gap: 14px;
+  }
+
+  .navbar-expanded-step-icon {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .navbar-expanded-step-name {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .navbar-expanded-step-description {
+    font-size: 13px;
+    line-height: 18px;
+  }
+}

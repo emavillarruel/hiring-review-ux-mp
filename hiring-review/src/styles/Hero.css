@@ -1,0 +1,206 @@
+/* ============================================
+   HERO - Sección principal con video de fondo
+   ============================================ */
+
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  border-radius: 20px;
+  overflow: hidden;
+ }
+
+/* Fondo de video o gradiente */
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-gradient {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+
+/* Overlay oscuro opcional para legibilidad */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+  z-index: 2;
+}
+
+/* Contenido del hero */
+.hero-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 32px;
+  z-index: 3;
+}
+
+/* Texto del hero */
+.hero-text {
+  max-width: 500px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero-title {
+  font-family: 'Proxima Nova', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1;
+  letter-spacing: -2.88px;
+  color: white;
+  margin: 0;
+  font-feature-settings: 'salt' 1, 'calt' 0;
+}
+
+.hero-description {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 0;
+  color: white;
+  margin: 0;
+  font-feature-settings: 'case' 1;
+}
+
+/* Badges de resumen */
+.hero-summary {
+  position: absolute;
+  bottom: 32px;
+  right: 0;
+  z-index: 4;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 1366px) {
+  .hero-container {
+    height: 600px;
+  }
+
+  .hero-title {
+    font-size: 64px;
+    letter-spacing: -2.56px;
+  }
+
+  .hero-description {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero-container {
+    height: 500px;
+  }
+
+  .hero-content {
+    padding: 24px;
+  }
+
+  .hero-text {
+    max-width: 450px;
+    margin-bottom: 30px;
+  }
+
+  .hero-title {
+    font-size: 56px;
+    letter-spacing: -2.24px;
+  }
+
+  .hero-description {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .hero-summary {
+    bottom: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    height: 450px;
+    border-radius: 12px;
+  }
+
+  .hero-content {
+    padding: 20px;
+  }
+
+  .hero-text {
+    max-width: 400px;
+    margin-bottom: 80px;
+  }
+
+  .hero-title {
+    font-size: 48px;
+    letter-spacing: -1.92px;
+  }
+
+  .hero-description {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .hero-summary {
+    bottom: 20px;
+    right: 0;
+    left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-container {
+    height: 500px;
+    border-radius: 8px;
+  }
+
+  .hero-content {
+    padding: 16px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    margin-bottom: 100px;
+  }
+
+  .hero-title {
+    font-size: 36px;
+    letter-spacing: -1.44px;
+  }
+
+  .hero-description {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .hero-summary {
+    bottom: 16px;
+  }
+}

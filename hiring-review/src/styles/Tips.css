@@ -1,0 +1,207 @@
+/* ============================================
+   TIPS SECTION - Sección de tips con acordeón
+   ============================================ */
+
+.tips-container {
+  background: white;
+  border-radius: 20px;
+  padding: 80px 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  align-items: center;
+}
+
+/* ============================================
+   HEADER
+   ============================================ */
+
+.tips-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tips-title {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 1;
+  letter-spacing: -2.88px;
+  color: #282834;
+  text-align: center;
+  margin: 0;
+}
+
+/* ============================================
+   ACCORDION LIST
+   ============================================ */
+
+.tips-list {
+  width: 100%;
+  max-width: 928px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* ============================================
+   ACCORDION ITEM
+   ============================================ */
+
+.tips-item {
+  background: #f4f5f9;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.tips-item:hover {
+  background: rgba(228, 229, 235, 1);
+}
+
+.tips-item-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 40px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.tips-item-title {
+  flex: 1;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0;
+  color: #282834;
+  text-align: left;
+  margin: 0;
+}
+
+/* ============================================
+   CHEVRON
+   ============================================ */
+
+.tips-chevron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.tips-chevron svg {
+  transition: transform 0.3s ease;
+}
+
+.tips-chevron svg.rotated {
+  transform: rotate(180deg);
+}
+
+/* ============================================
+   CONTENT
+   ============================================ */
+
+.tips-item-content {
+  padding: 0 40px 40px 40px;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Bullets */
+.tips-bullets {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tips-bullets li {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0;
+  color: #666;
+  padding-left: 24px;
+  position: relative;
+}
+
+.tips-bullets li::before {
+  content: '•';
+  position: absolute;
+  left: 8px;
+  color: #282834;
+  font-weight: 700;
+}
+
+/* Text paragraphs */
+.tips-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tips-text p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0;
+  color: #666;
+  margin: 0;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 768px) {
+  .tips-container {
+    padding: 40px 20px;
+    gap: 40px;
+  }
+
+  .tips-title {
+    font-size: 48px;
+    letter-spacing: -1.92px;
+  }
+
+  .tips-item-header {
+    padding: 24px;
+    gap: 16px;
+  }
+
+  .tips-item-content {
+    padding: 0 24px 24px 24px;
+  }
+
+  .tips-chevron {
+    width: 40px;
+    height: 40px;
+  }
+}

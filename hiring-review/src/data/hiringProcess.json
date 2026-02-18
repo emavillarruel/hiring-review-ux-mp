@@ -1,0 +1,271 @@
+{
+  "metadata": {
+    "version": "2.0",
+    "lastUpdated": "2026-02-11",
+    "company": "Mercado Pago - Equipo UX"
+  },
+  "opportunity": {
+    "title": "Conoce nuestro equipo y proyectos",
+    "subtitle": "Antes de comenzar, queremos que veas algunos de los proyectos emblemáticos que hemos desarrollado. Así podrás dimensionar el alcance del trabajo y el impacto que generamos.",
+    "videoUrl": "https://player.vimeo.com/video/1133918138?badge=0&autopause=0&player_id=0&app_id=58479",
+    "jobDescription": {
+      "role": "Senior UX Designer – Cobranza (Créditos)",
+      "intro": "Buscamos una persona Senior UX Designer para el diseño de experiencias en el track de Cobranza dentro del vertical de Créditos.",
+      "context": "Este rol es clave para transformar necesidades reales de personas usuarias y equipos internos (cobranza, riesgo, operaciones, data) en soluciones simples, efectivas y de alta calidad, en un contexto de alta complejidad, sensibilidad y regulación.",
+      "valued": [
+        {
+          "title": "Equilibrar impacto y empatía",
+          "description": "Diseñar experiencias que mejoren la recuperación y los indicadores de negocio, cuidando al mismo tiempo la relación con las personas usuarias en momentos de tensión (mora, dificultades de pago, acuerdos)."
+        },
+        {
+          "title": "Combinar visión estratégica y ejecución impecable",
+          "description": "Moverse cómodamente entre la definición de la estrategia de experiencia del ciclo de cobranza y el detalle fino de cada flujo, pantalla y mensaje."
+        }
+      ],
+      "responsibilities": [
+        "Liderar el diseño de experiencias end-to-end de cobranza, cubriendo todo el journey (prevención de mora, recordatorios, gestión de atrasos, acuerdos, refinanciaciones)",
+        "Colaborar con Producto, Cobranza, Riesgo, Data, Legal y Tecnología en estrategias de segmentación, reglas de negocio y métricas clave",
+        "Modelar sistemas y flujos complejos multi-canal (app, web, notificaciones, email, WhatsApp, llamadas)",
+        "Diseñar y prototipar soluciones ágiles con wireframes, flujos y prototipos interactivos",
+        "Elevar el nivel de craft asegurando claridad funcional, consistencia con el Design System y estados bien resueltos",
+        "Construir contenido (UX Writing) empático y efectivo en contextos sensibles de cobranza",
+        "Contribuir activamente al Design System con componentes reutilizables del dominio de cobranza",
+        "Aprovechar IA para acelerar exploración, analizar feedback y potenciar personalización",
+        "Mentorizar a otros diseñadores y elevar el estándar de calidad del equipo"
+      ],
+      "requirements": [
+        "Experiencia senior comprobada en Diseño de Producto (UX/UI) para productos digitales complejos",
+        "Idealmente en servicios financieros, fintech, banca o seguros",
+        "Experiencia en flujos críticos de negocio mejorando métricas (conversión, retención, recuperación)",
+        "Capacidad para modelar sistemas, journeys y flujos complejos con múltiples escenarios",
+        "Dominio sólido de diseño visual e interacción usando Design Systems a escala",
+        "Habilidades avanzadas de comunicación y storytelling para alinear stakeholders",
+        "Interés genuino por nuevas tecnologías, especialmente IA",
+        "Comodidad para operar en ambigüedad y bajo restricciones regulatorias"
+      ]
+    }
+  },
+  "process": {
+    "title": "Tu proceso de entrevistas",
+    "greeting": "Hola",
+    "objective": "Queremos que tengas claridad sobre cada etapa, qué esperar y cómo prepararte",
+    "totalSteps": 6,
+    "estimatedDuration": "2-4 semanas"
+  },
+  "steps": [
+    {
+      "id": 0,
+      "name": "Sobre la búsqueda",
+      "shortName": "Sobre la búsqueda",
+      "icon": "info",
+      "type": "intro",
+      "duration": "15 min",
+      "description": "El objetivo es que tengas claridad de lo que hacemos y buscamos",
+      "videoSrc": "/src/assets/SEPA01.mp4",
+      "whatIsThis": "Cómo pensamos y hacemos diseño en MeLi",
+      "whatToExpect": [
+        "Video de bienvenida del equipo de UX",
+        "Descripción detallada del puesto y responsabilidades",
+        "Contexto del equipo y proyectos actuales",
+        "Perfil que estamos buscando"
+      ],
+      "howToPrepare": [
+        "Mira el video completo para entender el contexto",
+        "Lee la descripción del puesto con atención",
+        "Reflexiona si el rol se alinea con tus intereses",
+        "Anota preguntas que quieras hacer en las entrevistas"
+      ],
+      "nextSteps": "Si decides continuar, comenzaremos con Talent Acquisition"
+    },
+    {
+      "id": 1,
+      "name": "Talent Acquisition",
+      "shortName": "Talent Acquisition",
+      "icon": "users",
+      "type": "fixed",
+      "duration": "45-60 min",
+      "description": "Esta es tu primera conversación formal con nosotros. Queremos conocerte mejor, entender tu motivación y alinearnos en expectativas.",
+      "videoSrc": "src/assets/vecteezy_abstract-colorful-pastel-gradient-background_2018246.mp4",
+      "whatIsThis": "Tu primera entrevist a con nuestro equipo de Talent",
+      "whatToExpect": [
+        "Conversaremos sobre tu experiencia y trayectoria profesional",
+        "Te contaremos sobre la cultura y valores de Mercado Pago",
+        "Hablaremos de expectativas: compensación, modalidad de trabajo, tiempos",
+        "Resolveremos dudas que tengas sobre la posición o el equipo"
+      ],
+      "howToPrepare": [
+        "Reflexiona sobre qué te motiva a aplicar a esta posición",
+        "Ten clara tu expectativa salarial y disponibilidad",
+        "Prepara preguntas sobre la empresa, el equipo o el rol",
+        "Piensa en ejemplos de tu experiencia que demuestren fit cultural"
+      ],
+      "whoWillBeThere": ["Reclutador/a de Talent Acquisition"],
+      "nextSteps": "Si hay match, agendaremos tu entrevista con el equipo de UX"
+    },
+    {
+      "id": 2,
+      "name": "Portfolio Review",
+      "shortName": "Portfolio Review",
+      "icon": "presentation",
+      "type": "fixed",
+      "duration": "60 min",
+      "description": "Esta es la entrevista técnica donde evaluamos tu criterio, proceso y calidad de trabajo. Queremos entender cómo piensas y resuelves problemas de diseño.",
+      "videoSrc": "src/assets/vecteezy_abstract-colorful-pastel-gradient-background_2018246.mp4",
+      "whatIsThis": "Presentarás tu portfolio",
+      "whatToExpect": [
+        "Presentarás 1 proyecto relevante de tu portfolio (30 min)",
+        "Te preguntaremos sobre tus decisiones de diseño y trade-offs",
+        "Exploraremos resultados, impacto y aprendizajes del proyecto",
+        "Queremos ver tu proceso de pensamiento, no solo el resultado final"
+      ],
+      "howToPrepare": [
+        "Elige 1 proyecto real del que te sientas orgullosx (no proyectos de facultad o cursos)",
+        "Prepara una presentación de 30 min: contexto, problema, proceso, solución y resultados",
+        "Ten claros tus aportes específicos y tu rol en el proyecto",
+        "Incluye métricas o evidencia de impacto si las tienes",
+        "Prepárate para hablar de lo que no funcionó y qué aprendiste"
+      ],
+      "tips": [
+        "No buscamos el proyecto perfecto, buscamos criterio y profundidad",
+        "Sé honesto sobre tu rol real en el proyecto",
+        "Explica el por qué detrás de tus decisiones",
+        "Está bien decir 'no sé' o 'esto no funcionó'"
+      ],
+      "whoWillBeThere": ["2 integrantes del equipo UX"],
+      "nextSteps": "Si avanzas, te agendaremos una entrevista con el Hiring Manager o te enviaremos un ejercicio práctico opcional"
+    },
+    {
+      "id": 3,
+      "name": "Ejercicio",
+      "shortName": "Ejercicio",
+      "icon": "clipboard",
+      "type": "optional",
+      "duration": "3-5 días",
+      "isOptional": true,
+      "whatIsThis": "Ejercicio práctico",
+      "videoSrc": "src/assets/vecteezy_abstract-colorful-pastel-gradient-background_2018246.mp4",
+      "description": "Queremos validar tu criterio e involucramiento real con un proyecto similar a lo que harías en el día a día. No es un test de diseño, sino una oportunidad para mostrar tu proceso y forma de pensar.",
+      "exercises": [
+        {
+          "type": "product-design",
+          "name": "Product Design (end-to-end)",
+          "description": "Ejercicio completo de diseño de producto que abarca todo el proceso: desde el framing del problema hasta la solución propuesta.",
+          "validates": [
+            "Framing del problema",
+            "Priorización de soluciones",
+            "UX thinking y criterio",
+            "Estructura y organización",
+            "Comunicación y storytelling"
+          ],
+          "timeframe": "3-5 días para completarlo",
+          "downloadFile": "/src/assets/ESP-VOS-UXChallenge-DIS-002.pdf",
+          "downloadFileName": "Ejercicio-ProductDesign.pdf"
+        },
+        {
+          "type": "craft-track",
+          "name": "Craft Track (Visual / Motion / Systems)",
+          "description": "Ejercicio enfocado en validar habilidades de ejecución visual, interacción y sistemas de diseño.",
+          "validates": [
+            "Ejecución y calidad visual",
+            "Consistencia con Design System",
+            "Componentización y escalabilidad",
+            "Calidad de UI e interacciones",
+            "Motion design y microinteracciones"
+          ],
+          "timeframe": "3-5 días para completarlo",
+          "downloadFile": "/src/assets/ESP-UXChallenge-TechPathCMDIS-001.pdf",
+          "downloadFileName": "Ejercicio-CraftTrack.pdf"
+        }
+      ],
+      "whatToExpect": [
+        "Recibirás el ejercicio por email después de tu Portfolio Review",
+        "Tendrás 3-5 días para trabajar en él de manera asíncrona",
+        "Podrás elegir el momento que mejor te convenga para hacerlo",
+        "No se espera una solución perfecta, sino ver tu proceso de pensamiento",
+        "Después presentarás tu solución al equipo (30-45 min)"
+      ],
+      "howToPrepare": [
+        "Lee el brief con atención y anota todas tus dudas",
+        "Pregunta lo que necesites antes de comenzar",
+        "Gestiona bien tu tiempo: no se trata de trabajar 5 días completos",
+        "Documenta tus decisiones y proceso de pensamiento",
+        "Prepara una presentación clara de tu solución"
+      ],
+      "tips": [
+        "No necesitas resolver todo perfectamente, prioriza lo importante",
+        "Muestra tu proceso: sketches, iteraciones, alternativas consideradas",
+        "Explica tus trade-offs y decisiones",
+        "Es válido mencionar lo que harías diferente con más tiempo"
+      ],
+      "whoWillBeThere": ["2-3 integrantes del equipo UX"],
+      "nextSteps": "Después de tu presentación, agendaremos la entrevista con el Hiring Manager"
+    },
+    {
+      "id": 4,
+      "name": "Hiring Manager",
+      "shortName": "Hiring Manager",
+      "icon": "search",
+      "type": "fixed",
+      "duration": "45-60 min",
+      "whatIsThis": "Esta es la última entrevista del proceso",
+      "videoSrc": "src/assets/vecteezy_abstract-colorful-pastel-gradient-background_2018246.mp4",
+      "description": "Tu futuro manager quiere conocerte en profundidad, validar seniority y asegurarse de que hay fit con el equipo y el momento actual.",
+      "whatToExpect": [
+        "Profundizaremos en tu caso de estudio y decisiones complejas",
+        "Conversaremos sobre tu forma de trabajar y colaborar con otros",
+        "Evaluaremos autonomía, ownership y capacidad de priorizar",
+        "Validaremos el match entre tu perfil y las necesidades actuales del equipo"
+      ],
+      "howToPrepare": [
+        "Repasa el proyecto que presentaste en la entrevista anterior",
+        "Piensa en ejemplos concretos de autonomía y ownership",
+        "Prepárate para hablar de cómo priorizas y tomas decisiones",
+        "Ten claras tus expectativas sobre el rol y tu carrera"
+      ],
+      "whoWillBeThere": ["Hiring Manager (tu futuro manager)"],
+      "nextSteps": "Después de esta entrevista, te comunicaremos la decisión final"
+    },
+    {
+      "id": 5,
+      "name": "Definición",
+      "shortName": "Paso Final",
+      "icon": "check-circle",
+      "type": "fixed",
+      "duration": "3-5 días hábiles",
+      "whatIsThis": "Llegaste al final del proceso",
+      "videoSrc": "src/assets/vecteezy_abstract-colorful-pastel-gradient-background_2018246.mp4",
+      "description": "Aquí te comunicaremos la decisión y los próximos pasos.",
+      "possibleOutcomes": [
+        {
+          "type": "offer",
+          "title": "Oferta laboral",
+          "description": "Si el resultado es positivo, recibirás una oferta formal con todos los detalles",
+          "includes": [
+            "Propuesta de compensación y beneficios",
+            "Fecha de inicio sugerida",
+            "Detalles sobre el onboarding",
+            "Próximos pasos administrativos"
+          ]
+        },
+        {
+          "type": "feedback",
+          "title": "Feedback constructivo",
+          "description": "Si decidimos no avanzar, te daremos feedback sobre tu proceso",
+          "includes": [
+            "Razones claras de la decisión",
+            "Aspectos positivos de tu perfil",
+            "Áreas de mejora identificadas",
+            "Posibilidad de futuras oportunidades"
+          ]
+        }
+      ],
+      "whatToExpect": [
+        "Te contactaremos en máximo 3-s5 días hábiles después de tu última entrevista",
+        "Tendrás tiempo para revisar la oferta con calma",
+        "Podrás hacer preguntas o negociar aspectos de la propuesta",
+        "Te acompañaremos en todo el proceso de decisión"
+      ],
+      "nextSteps": "¡Esperamos que pronto seas parte del equipo! 🎉"
+    }
+  ]
+}
